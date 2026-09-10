@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --table-green: #2e7d32;
+    --table-green-dark: #1b5e20;
+    --table-green-light: #388e3c;
+    --bg-dark: #0f1c13;
+    --text-gold: #ffeb3b;
+    --text-gold-light: #fff59d;
+    --border-light: #a5d6a7;
+    --gold: #f5b042;
+    --gold-light: #ffd966;
+    --gold-dark: #c8860a;
+    --green-deep: #06170d;
+    --green-mid: #0d2818;
+    --green-card: #1f3a2c;
+    --green-surface: #133a25;
+    --green-surface-elevated: #1b4d32;
+    --green-border: #2c6340;
+    --text-main: #ffffff;
+    --text-muted: #c8e6c9;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Reference Visual Style Utilities */
+.felt-surface {
+  background: radial-gradient(circle at 50% 45%, #2e7d32 0%, #236528 55%, #16481b 100%);
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.65), 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.score-badge-ref {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 2px solid var(--border-light);
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-yellow-ref {
+  background: #ffeb3b;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+.btn-yellow-ref:hover {
+  background: #fff176;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+.btn-yellow-ref:active {
+  transform: scale(0.96);
+}
+
+.btn-blue-ref {
+  background: #2196f3;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+.btn-blue-ref:hover {
+  background: #42a5f5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+.btn-blue-ref:active {
+  transform: scale(0.96);
+}
+
+.btn-red-ref {
+  background: #c0392b;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+.btn-red-ref:hover {
+  background: #d32f2f;
+  transform: translateY(-1px);
+}
+.btn-red-ref:active {
+  transform: scale(0.96);
+}
+
+.card-face-ref {
+  background: #ffffff;
+  color: #1f2e1c;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.card-back-ref {
+  background-color: #c62828 !important;
+  color: transparent;
+  border: 3px solid #ffffff !important;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.card-selected-glow {
+  transform: translateY(-12px) scale(1.04);
+  outline: 3px solid #ffeb3b;
+  box-shadow: 0 0 20px #ffeb3b, 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-target-glow {
+  box-shadow: 0 0 0 3px #ffeb3b, 0 0 15px rgba(255, 235, 59, 0.7);
+}
+
+@keyframes captureImpactPulse {
+  0% { transform: scale(0.9); opacity: 0.9; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+.animate-capture-impact {
+  animation: captureImpactPulse 0.45s ease-out forwards;
+}
+
+
+

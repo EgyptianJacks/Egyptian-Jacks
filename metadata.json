@@ -1,0 +1,6 @@
+{
+  "name": "Egyptian Jacks",
+  "description": "The classic Egyptian Jacks card game featuring dual tables, stack capturing, and royal combos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
